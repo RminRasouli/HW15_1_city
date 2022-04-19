@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_fragments"
+    app:startDestination="@id/oneFrafment">
+
+    <fragment
+        android:id="@+id/oneFrafment"
+        android:name="com.armin.hw15_1_city.ui.OneFragment"
+        android:label="OneFrafment" >
+        <action
+            android:id="@+id/action_oneFrafment_to_twoFragment"
+            app:destination="@id/twoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/twoFragment"
+        android:name="com.armin.hw15_1_city.ui.TwoFragment"
+        android:label="TwoFragment" >
+        <action
+            android:id="@+id/action_twoFragment_to_oneFrafment"
+            app:destination="@id/oneFrafment" />
+    </fragment>
+</navigation>
